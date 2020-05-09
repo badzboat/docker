@@ -12,3 +12,8 @@
 "docker -p 8080:5000" map port 8080 to 5000 (internal docker port)   
 "docker inspect" find parameter   
 "docker -v /opt/datadir:/var/lib/mysql" for persistent storage   
+
+
+   
+
+ docker run --name some-mysql2 -e MYSQL_ROOT_PASSWORD=my-secret-pw -v /opt/datadir:/var/lib/mysql -d mysql
